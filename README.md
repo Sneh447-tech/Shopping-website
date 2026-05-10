@@ -40,8 +40,9 @@ Shopping-website/
 ## 📸 Product Screenshots
 
 ### Product Collection
-![Products](images/product1.png)
-
+![Products]
+(images/https://github.com/Sneh447-tech/Shopping-website/blob/bbdf062f568c39191cb379071bcc8de7f9ed4f0a/jeans.jpg)
+(images/
 ### Shopping Items
 ![Shopping](images/product2.png)
 
