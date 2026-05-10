@@ -83,7 +83,7 @@ This project was created to improve my skills in web development, backend integr
 
 ## 👨‍💻 Author
 
-Developed by **Zylo Gamerz**
+Developed by **Sneh**
 
 ## 📄 License
 
