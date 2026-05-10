@@ -44,8 +44,9 @@ Shopping-website/
 (images/jeans.jpg)
 (images/korean_dress.jpg)
 ### Shopping Items
-![Shopping](images/nike.jpg)
-(images/
+![Shopping]
+(images/nike.jpg)
+(images/tshirt.jpg)
 > Replace image names according to your actual files.
 
 ---
