@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Fashion Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>🛒 AI Fashion Store</h2>
+    <div>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </div>
+</div>
+
+<!-- HERO BANNER -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Discover Your Style 👗🔥</h1>
+        <p>Trendy Clothes, Shoes & Fashion</p>
+        <a href="/login"><button>Shop Now</button></a>
+    </div>
+</div>
+
+<!-- CATEGORIES -->
+<h2 class="title">Shop by Category</h2>
+
+<div class="categories">
+
+    <div class="card">
+        <img src="https://picsum.photos/300/200?random=1">
+        <h3>Men</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/200?random=2">
+        <h3>Women</h3>
+    </div>
+
+    <div class="card">
+        <img src="https://picsum.photos/300/200?random=3">
+        <h3>Shoes</h3>
+    </div>
+
+</div>
+
+<!-- TRENDING PRODUCTS -->
+<h2 class="title">Trending Now</h2>
+
+<div class="products">
+
+    <div class="product">
+        <img src="https://picsum.photos/200?1">
+        <p>Stylish Shoes</p>
+        <p>₹999</p>
+    </div>
+
+    <div class="product">
+        <img src="https://picsum.photos/200?2">
+        <p>Casual Outfit</p>
+        <p>₹799</p>
+    </div>
+
+    <div class="product">
+        <img src="https://picsum.photos/200?3">
+        <p>Formal Suit</p>
+        <p>₹2999</p>
+    </div>
+
+</div>
+
+</body>
+</html>

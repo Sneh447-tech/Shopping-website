@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>🛒 MyShop</h2>
+    <div>
+        <a href="/products">Shop</a>
+        <a href="/cart">Cart</a>
+        <a href="/logout">Logout</a>
+    </div>
+</div>
+
+<h2 style="text-align:center;">💳 Payment</h2>
+
+<div style="text-align:center; margin-top:30px;">
+
+    <h3>Scan & Pay using UPI</h3>
+
+    <!-- QR CODE -->
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=test@upi&pn=MyShop&am=500" />
+
+    <p>UPI ID: <b>test@upi</b></p>
+
+    <br>
+
+    <!-- CONFIRM BUTTON -->
+    <button onclick="paymentDone()" style="width:200px;">
+        I Have Paid ✅
+    </button>
+
+</div>
+
+<script>
+function paymentDone() {
+    alert("Payment Successful ✅");
+    window.location.href = "/success";
+}
+</script>
+
+</body>
+</html>

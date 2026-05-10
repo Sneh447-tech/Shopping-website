@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>🛒 MyShop</h2>
+
+    <div>
+        <a href="/products">Shop</a>
+        <a href="/cart">Cart</a>
+        <a href="/logout">Logout</a>
+    </div>
+</div>
+
+<!-- PRODUCTS -->
+<h2 style="text-align:center;">Our Products</h2>
+
+<div class="product-container">
+
+{% if products %}
+    {% for p in products %}
+    <div class="product-card">
+
+        <img src="{{ url_for('static', filename='images/' + p.image) }}">
+
+        <h3>{{ p.name }}</h3>
+        <p>₹{{ p.price }}</p>
+
+        <a href="/add-to-cart/{{ p.id }}">
+            <button>Add to Cart</button>
+        </a>
+
+    </div>
+    {% endfor %}
+{% else %}
+    <p style="text-align:center;">No products available</p>
+{% endif %}
+
+</div>
+
+</body>
+</html>
